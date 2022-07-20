@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function GraphicDesign() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     Graphic design
     We deliver eye-catching branding materials that are tailored to meet your business objectives.
   

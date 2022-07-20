@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     About us
     Founded in 2010, we are a creative agency that produces lasting results for our clients. 
     We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 

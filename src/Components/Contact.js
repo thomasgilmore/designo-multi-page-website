@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     Contact us
     Ready to take it to the next level? Let’s talk about your project or idea and find out how 
     we can help your business grow. If you are looking for unique digital experiences that’s 

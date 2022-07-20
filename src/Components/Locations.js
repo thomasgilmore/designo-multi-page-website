@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function Locations() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     Canada
     Designo Central Office
     3886 Wellington Street

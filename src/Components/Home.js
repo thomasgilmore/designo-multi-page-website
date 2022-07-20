@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-    
+    <div>
     Award-winning custom designs and digital branding solutions
   
     With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 

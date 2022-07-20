@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function AppDesign() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     App design
     Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
   

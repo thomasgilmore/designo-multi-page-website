@@ -2,10 +2,7 @@ import React from 'react'
 
 export default function WebDesign() {
   return (
-    <div>Our Company
-    Locations
-    Contact
-  
+    <div>
     Web design
     We build websites that serve as powerful marketing tools and bring memorable brand experiences.
     
