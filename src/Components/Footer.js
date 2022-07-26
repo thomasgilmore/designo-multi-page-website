@@ -3,7 +3,7 @@ import logoLight from '../assets/shared/desktop/logo-light.png';
 
 export default function Footer() {
   return (
-    <div className='m-5'>
+    <div className='p-5' style={{ backgroundColor: '#1D1C1E', color: '#fff' }}>
       <div className='flex justify-between items-center'>
       <img src={logoLight} style={{ width: 250 }} alt="Designo Logo" />
       Our Company
