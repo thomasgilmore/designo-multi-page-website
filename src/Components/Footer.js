@@ -20,7 +20,7 @@ export default function Footer() {
 
       <hr style={{ color: '#808080', marginTop: 30, marginBottom: 30 }} />
 
-      <div className='flex justify-between' style={{ color: "#D3D3D3" }}>
+      <div className='flex flex-col text-center gap-4 justify-between sm:flex-row sm:text-left' style={{ color: "#D3D3D3" }}>
         <div className='flex flex-col'>
           <span>Designo Central Office</span>
           <span>3886 Wellington Street</span>
@@ -31,7 +31,7 @@ export default function Footer() {
           <span>P : +1 253-863-8967</span>
           <span>M : contact@designo.co</span>
         </div>
-        <div className='flex gap-4 items-end'>
+        <div className='flex gap-4 items-end mx-auto my-4 sm:m-2'>
           <img src={iconFacebook} style={{ width: 30, height: 30 }} alt="Facebook Icon" />
           <img src={iconYouTube} style={{ width: 30, height: 30 }} alt="YouTube Icon" />
           <img src={iconTwitter} style={{ width: 30, height: 30 }} alt="Twitter Icon" />
