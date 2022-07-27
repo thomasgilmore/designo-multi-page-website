@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DesignoContext } from '../Context/Context';
 import logoLight from '../assets/shared/desktop/logo-light.png';
 import iconFacebook from '../assets/shared/desktop/icon-facebook.svg';
 import iconInstagram from '../assets/shared/desktop/icon-instagram.svg';
@@ -7,20 +8,28 @@ import iconTwitter from '../assets/shared/desktop/icon-twitter.svg';
 import iconYouTube from '../assets/shared/desktop/icon-youtube.svg';
 
 export default function Footer() {
+  const { windowSize } = useContext(DesignoContext);
+
   return (
     <div className='p-5' style={{ backgroundColor: '#1D1C1E' }}>
       <div className='flex justify-between items-center'>
         <img src={logoLight} style={{ width: 250 }} alt="Designo Logo" />
-        <div className='flex gap-6' style={{ color: '#fff' }}>
+        {windowSize.innerWidth > 640 ? <div className='flex gap-6' style={{ color: '#fff' }}>
           <span>Our Company</span>
           <span>Locations</span>
           <span>Contact</span>
-        </div>
+        </div> : null }
       </div>
 
       <hr style={{ color: '#808080', marginTop: 30, marginBottom: 30 }} />
 
       <div className='flex flex-col text-center gap-4 justify-between sm:flex-row sm:text-left' style={{ color: "#D3D3D3" }}>
+      {windowSize.innerWidth < 640 ? 
+        <div className='flex flex-col gap-6' style={{ color: '#fff' }}>
+          <span>Our Company</span>
+          <span>Locations</span>
+          <span>Contact</span>
+        </div> : null }
         <div className='flex flex-col'>
           <span>Designo Central Office</span>
           <span>3886 Wellington Street</span>
