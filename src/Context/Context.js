@@ -3,13 +3,18 @@ import { createContext, useState, useEffect } from "react";
 const DesignoContext = createContext();
 
 const DesignoContextProvider = ({ children }) => {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const handleMobileNavOpen = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  }
+
   const getWindowSize = () => {
     const {innerWidth, innerHeight} = window;
     return {innerWidth, innerHeight};
   }
   
   const [windowSize, setWindowSize] = useState(getWindowSize())
-
 
   useEffect(() => {
     function handleWindowResize() {
@@ -26,7 +31,10 @@ const DesignoContextProvider = ({ children }) => {
 
   const value = {
     windowSize, 
-    setWindowSize
+    setWindowSize,
+    mobileNavOpen,
+    setMobileNavOpen,
+    handleMobileNavOpen
   }
   return (
     <DesignoContext.Provider value={value}>
