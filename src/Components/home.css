@@ -1,0 +1,87 @@
+.awardWinningDiv {
+  background-color: #E7816B;
+  color: #fff;
+  height: 640px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.awardWinningDivText {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+
+.awardWinningTitle,
+.designsAndDigitalTitle {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.brandingSolutionsTitle {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+.withOverText {
+  margin: 10px 0 0 0;
+}
+
+.creatingFullyText,
+.brandExperiencesText {
+  margin: 0;
+}
+
+.learnMoreButton {
+  background-color: #fff; 
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  margin: 15px 0 0 0;
+  padding: 10px 20px;
+}
+
+.cirlce {
+  position: absolute; 
+  top: 0; 
+  right: 0;
+}
+
+.iPhone {
+  position: absolute; 
+  top: -65px;
+  right: -25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .awardWinningDiv {
+    height: 689px; 
+  }
+
+  .awardWinningDivText {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .cirlce {
+    position: absolute; 
+    top: 70px; 
+    right: -100px;
+  }
+  
+  .iPhone {
+    height: 775px;
+    /* position: absolute;  */
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
