@@ -29,15 +29,23 @@ export default function Home() {
       <img src={bgPatternHeroHome} className="cirlce" alt="Circle Pattern" />
       <img src={imageHeroPhone} className="iPhone" alt="Phone" />
     </div>
-    
-    Web Design
-    View Projects
-    
-    App Design
-    View Projects
-    
-    Graphic Design
-    View Projects
+
+    <div className='threeImagesStack'>
+      <div className='webDesign'>
+        <h1>Web Design</h1>
+        <p>View Projects</p>
+      </div>
+      <div className='appDesignAndGraphicDesign'>
+        <div className='appDesign'>
+          <h1>App Design</h1>
+          <p>View Projects</p>
+        </div>
+        <div className='graphicDesign'>
+          <h1>Graphic Design</h1>
+          <p>View Projects</p>
+        </div>
+      </div>
+    </div>
     
     Passionate
     Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge

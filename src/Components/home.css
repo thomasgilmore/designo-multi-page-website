@@ -61,6 +61,96 @@
   right: -25px;
 }
 
+.threeImagesStack {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.webDesign {
+  display: flex;
+  flex: 1 0 50%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-web-design-large.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 640px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.webDesign:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-web-design-large.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.appDesign {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-app-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 315px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.appDesign:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-app-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.graphicDesign {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-graphic-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 315px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.graphicDesign:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-graphic-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.appDesignAndGraphicDesign {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+  gap: 10px;
+}
+
 @media only screen and (max-width: 992px) {
   .awardWinningDiv {
     height: 689px; 
@@ -82,10 +172,40 @@
   
   .iPhone {
     height: 775px;
-    /* position: absolute;  */
     top: 200px;
     left: 0;
     right: 0;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .threeImagesStack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .appDesign {
+    height: 210px;
+    flex: none;
+  }
+
+  .graphicDesign {
+    height: 210px;
+    flex: none;
+  }
+
+  .webDesign {
+    height: 210px;
+    flex: none;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-web-design-small.jpg') no-repeat center center;
+  }
+
+  .webDesign:hover {
+    background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-web-design-small.jpg') no-repeat center center;
   }
 }
