@@ -3,10 +3,9 @@ import React from 'react'
 import bgPatternHeroHome from '../assets/home/desktop/bg-pattern-hero-home.svg';
 import imageHeroPhone from '../assets/home/desktop/image-hero-phone.png';
 import illustrationFriendly from '../assets/home/desktop/illustration-friendly.svg';
+import illustrationPassionate from '../assets/home/desktop/illustration-passionate.svg';
+import illustrationResourceful from '../assets/home/desktop/illustration-resourceful.svg';
 import Container from 'react-bootstrap/Container';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Hidden } from '@mui/material';
 
 export default function Home() {
   return (
@@ -47,19 +46,34 @@ export default function Home() {
       </div>
     </div>
     
-    Passionate
-    Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
-    art, design, and technology into exciting new solutions.
+    <div className='homeIllustrationSection'>
+      <div className='illustrationPassionateSection'>
+        <img src={illustrationPassionate} alt="Illustration Passionate" />
+        <div>
+          <h2>Passionate</h2>
+          <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
+          art, design, and technology into exciting new solutions.</p>
+        </div>
+      </div>
+      <div className='illustrationResourcefulSection'>
+        <img src={illustrationResourceful} alt="Illustration Resourceful" />
+        <div>
+          <h2>Resourceful</h2>
+          <p>Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
+          collaboration. It guarantees superior results that fulfill our clients' needs.</p>
+        </div>
+      </div>
+      <div className='illustrationFriendlySection'>
+        <img src={illustrationFriendly} alt="Illustration Friendly" />
+        <div>
+          <h2>Friendly</h2>
+          <p>We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
+          strive to give them the best experience a company can provide.</p>
+        </div>
+      </div>
+    </div>
     
-    Resourceful
-    Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
-    collaboration. It guarantees superior results that fulfill our clients’ needs.
-    
-    Friendly
-    We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
-    strive to give them the best experience a company can provide.
-    
-    Let’s talk about your project
+    Let's talk about your project
     Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
     Get in touch
     </Container>

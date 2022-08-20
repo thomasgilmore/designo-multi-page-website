@@ -151,6 +151,13 @@
   gap: 10px;
 }
 
+.homeIllustrationSection {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+  margin: 10px 0 30px 0;
+}
+
 @media only screen and (max-width: 992px) {
   .awardWinningDiv {
     height: 689px; 
@@ -176,6 +183,20 @@
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  .homeIllustrationSection {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .illustrationPassionateSection,
+  .illustrationResourcefulSection,
+  .illustrationFriendlySection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -207,5 +228,20 @@
 
   .webDesign:hover {
     background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-web-design-small.jpg') no-repeat center center;
+  }
+
+  .homeIllustrationSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .illustrationPassionateSection,
+  .illustrationResourcefulSection,
+  .illustrationFriendlySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
   }
 }
