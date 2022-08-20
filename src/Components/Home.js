@@ -6,6 +6,7 @@ import illustrationFriendly from '../assets/home/desktop/illustration-friendly.s
 import illustrationPassionate from '../assets/home/desktop/illustration-passionate.svg';
 import illustrationResourceful from '../assets/home/desktop/illustration-resourceful.svg';
 import Container from 'react-bootstrap/Container';
+import GetInTouch from './GetInTouch';
 
 export default function Home() {
   return (
@@ -73,10 +74,9 @@ export default function Home() {
       </div>
     </div>
     
-    Let's talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
-    Get in touch
+    
     </Container>
+    <GetInTouch />
     </div>
   )
 }
