@@ -11,7 +11,7 @@ export default function WebDesign() {
     <div>
       <Container>
       <div className='webDesignDiv'>
-        <h1>Web design</h1>
+        <h1>Web Design</h1>
         <p>We build websites that serve as powerful marketing tools</p> 
         <p>and bring memorable brand experiences.</p>
         <img src={bgPatternIntroWeb} className="bgPatternIntroWeb" alt="Background Pattern Into Web" />
