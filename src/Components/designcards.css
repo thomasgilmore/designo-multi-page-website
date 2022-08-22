@@ -1,0 +1,97 @@
+.webDesignCard {
+  display: flex;
+  flex: 1 0 50%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-web-design-large.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 640px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.webDesignCard:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-web-design-large.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.appDesignCard {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-app-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 315px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.appDesignCard:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-app-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.graphicDesignCard {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-graphic-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  height: 315px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.graphicDesignCard:hover {
+  background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-graphic-design.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 992) {
+  .appDesignCard {
+    height: 210px;
+    flex: none;
+  }
+
+  .graphicDesignCard {
+    height: 210px;
+    flex: none;
+  }
+
+  .webDesignCard {
+    height: 210px;
+    flex: none;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home/desktop/image-web-design-small.jpg') no-repeat center center;
+  }
+
+  .webDesignCard:hover {
+    background: linear-gradient(90deg, rgba(231, 129, 107, 0.8), rgba(231, 129, 107, 0.8)), url('../assets/home/desktop/image-web-design-small.jpg') no-repeat center center;
+  }
+}
