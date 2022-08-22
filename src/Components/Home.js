@@ -7,6 +7,9 @@ import illustrationPassionate from '../assets/home/desktop/illustration-passiona
 import illustrationResourceful from '../assets/home/desktop/illustration-resourceful.svg';
 import Container from 'react-bootstrap/Container';
 import GetInTouch from './GetInTouch';
+import GraphicDesignCard from './GraphicDesignCard';
+import AppDesignCard from './AppDesignCard';
+import WebDesignCard from './WebDesignCard';
 
 export default function Home() {
   return (
@@ -31,19 +34,10 @@ export default function Home() {
     </div>
 
     <div className='threeImagesStack'>
-      <div className='webDesign'>
-        <h1>Web Design</h1>
-        <p>View Projects</p>
-      </div>
+      <WebDesignCard />
       <div className='appDesignAndGraphicDesign'>
-        <div className='appDesign'>
-          <h1>App Design</h1>
-          <p>View Projects</p>
-        </div>
-        <div className='graphicDesign'>
-          <h1>Graphic Design</h1>
-          <p>View Projects</p>
-        </div>
+        <AppDesignCard />
+        <GraphicDesignCard />
       </div>
     </div>
     
