@@ -1,10 +1,22 @@
-import React from 'react'
+import './webdesign.css';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import AppDesignCard from './AppDesignCard';
+import GraphicDesignCard from './GraphicDesignCard';
+import GetInTouch from './GetInTouch';
+import bgPatternIntroWeb from '../assets/web-design/desktop/bg-pattern-intro-web.svg';
 
 export default function WebDesign() {
   return (
     <div>
-    Web design
-    We build websites that serve as powerful marketing tools and bring memorable brand experiences.
+      <Container>
+      <div className='webDesignDiv'>
+        <h1>Web design</h1>
+        <p>We build websites that serve as powerful marketing tools</p> 
+        <p>and bring memorable brand experiences.</p>
+        <img src={bgPatternIntroWeb} className="bgPatternIntroWeb" alt="Background Pattern Into Web" />
+      </div>
+    
     
     Express
     A multi-carrier shipping website for ecommerce businesses
@@ -24,16 +36,15 @@ export default function WebDesign() {
     Camp
     Get expert training in coding, data, design, and digital marketing
   
-    App Design
-    View Projects
+      <div className='graphicDesignAndAppDisign'>
+  
+          <AppDesignCard />
     
-    Graphic Design
-    View Projects
-    
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can help 
-    your business grow.
-    Get in touch
+          <GraphicDesignCard />
+      </div>
+
+      </Container>
+      <GetInTouch />
     </div>
   )
 }
