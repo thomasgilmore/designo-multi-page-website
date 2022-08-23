@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './appdesign.css';
+import Container from 'react-bootstrap/Container';
+import WebDesignCard from './WebDesignCard';
+import GraphicDesignCard from './GraphicDesignCard';
+import GetInTouch from './GetInTouch';
 
 export default function AppDesign() {
   return (
     <div>
+      <Container>
     App design
     Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
   
@@ -21,16 +27,14 @@ export default function AppDesign() {
     Loopstudios
     A VR experience app made for Loopstudios
   
-    Web Design
-    View Projects
-  
-    Graphic Design
-    View Projects
-  
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can help
-    your business grow.
-    Get in touch
+      <div className='graphicDesignAndWebDesign'>
+        <WebDesignCard />
+      
+        <GraphicDesignCard />
+      </div>
+
+      </Container>
+      <GetInTouch />
     </div>
   )
 }
