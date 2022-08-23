@@ -30,7 +30,7 @@
   justify-content: space-evenly;
 }
 
-.graphicDesignAndAppDisign {
+.graphicDesignAndAppDesign {
   display: flex;
   gap: 10px;
   margin: 20px 0;
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .graphicDesignAndAppDisign {
+  .graphicDesignAndAppDesign {
     flex-wrap: wrap;
   }
 }

@@ -28,7 +28,7 @@ export default function WebDesign() {
 
       </div>
    
-      <div className='graphicDesignAndAppDisign'>
+      <div className='graphicDesignAndAppDesign'>
   
           <AppDesignCard />
     
