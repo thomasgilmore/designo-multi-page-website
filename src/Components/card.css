@@ -1,0 +1,73 @@
+.cardDiv {
+  
+}
+
+.cardImg {
+  border-radius: 20px 20px 0 0;
+  height: 350px;
+}
+
+.cardTextDiv {
+  background-color: #FDF3F0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+}
+
+.cardDiv:hover .cardTextDiv {
+  background-color: #E7816B;
+}
+
+.cardDiv:hover .cardTitle {
+  color: #fff;
+}
+
+.cardDiv:hover p {
+  color: #fff;
+}
+
+.cardTitle {
+  color: #E7816B;
+}
+
+.cardTextDiv > p {
+  margin: 0;
+  color: #333136;
+}
+
+@media only screen and (max-width: 992px) {
+  .cardDiv {
+    display: flex;
+  }
+
+  .cardImg {
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .cardTextDiv {
+    border-radius: 0 20px 20px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .cardDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardImg {
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .cardTextDiv {
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
