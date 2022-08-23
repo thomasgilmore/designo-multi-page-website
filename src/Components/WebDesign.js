@@ -1,12 +1,15 @@
 import './webdesign.css';
-import React from 'react';
+import React, { useContext } from 'react';
+import { DesignoContext } from '../Context/Context'; 
 import Container from 'react-bootstrap/Container';
 import AppDesignCard from './AppDesignCard';
 import GraphicDesignCard from './GraphicDesignCard';
 import GetInTouch from './GetInTouch';
 import bgPatternIntroWeb from '../assets/web-design/desktop/bg-pattern-intro-web.svg';
+import Card from './Card';
 
 export default function WebDesign() {
+  const { webDesignCards } = useContext(DesignoContext);
   return (
     <div>
       <Container>
@@ -16,26 +19,15 @@ export default function WebDesign() {
         <p>and bring memorable brand experiences.</p>
         <img src={bgPatternIntroWeb} className="bgPatternIntroWeb" alt="Background Pattern Into Web" />
       </div>
+
+      <div className='webDesignCardsDiv'>
     
-    
-    Express
-    A multi-carrier shipping website for ecommerce businesses
-  
-    Transfer
-    Site for low-cost money transfers and sending money within seconds
-  
-    Photon
-    A state-of-the-art music player with high-resolution audio and DSP effects
-  
-    Builder
-    Connects users with local contractors based on their location
-  
-    Blogr
-    Blogr is a platform for creating an online blog or publication
-  
-    Camp
-    Get expert training in coding, data, design, and digital marketing
-  
+      {webDesignCards.map((card) => {
+        return <Card props={card.title} img={card.img} title={card.title} text1={card.text1} text2={card.text2} />
+      })}
+
+      </div>
+   
       <div className='graphicDesignAndAppDisign'>
   
           <AppDesignCard />
