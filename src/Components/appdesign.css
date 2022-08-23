@@ -1,3 +1,35 @@
+.appDesignDiv {
+  background-color: #E7816B;
+  color: #fff;
+  height: 200px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appDesignDiv > p {
+  margin: 0;
+}
+
+.bgPatternIntroApp {
+  position: absolute; 
+  top: 15;
+  left:0;
+  z-index: 5;
+}
+
+.appDesignCardsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px 0;
+  justify-content: space-evenly;
+}
+
 .graphicDesignAndWebDesign {
   display: flex;
   gap: 10px;

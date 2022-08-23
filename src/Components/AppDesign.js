@@ -1,6 +1,7 @@
 import React from 'react';
 import './appdesign.css';
 import Container from 'react-bootstrap/Container';
+import bgPatternIntroApp from '../assets/app-design/desktop/bg-pattern-intro-app.svg';
 import WebDesignCard from './WebDesignCard';
 import GraphicDesignCard from './GraphicDesignCard';
 import GetInTouch from './GetInTouch';
@@ -9,9 +10,12 @@ export default function AppDesign() {
   return (
     <div>
       <Container>
-    App design
-    Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
-  
+      <div className='appDesignDiv'>
+        <h1>App Design</h1>
+        <p>Our mobile designs bring intuitive digital solutions</p> 
+        <p>to your customers right at their fingertips.</p>
+        <img src={bgPatternIntroApp} className="bgPatternIntroApp" alt="Background Pattern Into App" />
+      </div>
     Airfilter
     Solving the problem of poor indoor air quality by filtering the air
   
