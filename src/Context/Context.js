@@ -94,17 +94,20 @@ const DesignoContextProvider = ({ children }) => {
     {
       img: imageChange,
       title: 'Tim Brown',
-      text1: "A book cover designed for Tim Brown's new release, 'Change'"
+      text1: "A book cover designed for Tim Brown's",
+      text2: "new release, 'Change'"
     },
     {
       img: imageBoxedWater,
       title: 'Boxed water',
-      text1: 'A simple packaging concept made for Boxed Water'
+      text1: 'A simple packaging concept made for',
+      text2: 'Boxed Water'
     },
     {
       img: imageScience,
       title: 'Science!',
-      text1: 'A poster made in collaboration with the Federal Art Project'
+      text1: 'A poster made in collaboration with the',
+      text2: 'Federal Art Project'
     }
   ]
 
