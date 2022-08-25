@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DesignoContext } from '../Context/Context'; 
 import './appdesign.css';
 import Container from 'react-bootstrap/Container';
 import bgPatternIntroApp from '../assets/app-design/desktop/bg-pattern-intro-app.svg';
 import WebDesignCard from './WebDesignCard';
 import GraphicDesignCard from './GraphicDesignCard';
 import GetInTouch from './GetInTouch';
+import Card from './Card';
 
 export default function AppDesign() {
+  const { appDesignCards } = useContext(DesignoContext);
   return (
     <div>
       <Container>
@@ -14,22 +17,16 @@ export default function AppDesign() {
         <h1>App Design</h1>
         <p>Our mobile designs bring intuitive digital solutions</p> 
         <p>to your customers right at their fingertips.</p>
-        <img src={bgPatternIntroApp} className="bgPatternIntroApp" alt="Background Pattern Into App" />
+        <img src={bgPatternIntroApp} className="bgPatternIntroApp" alt="Background Pattern Intro App" />
       </div>
-    Airfilter
-    Solving the problem of poor indoor air quality by filtering the air
-  
-    Eyecam
-    Product that lets you edit your favorite photos and videos at any time
-  
-    Faceit
-    Get to meet your favorite internet superstar with the faceit app
-  
-    Todo
-    A todo app that features cloud sync with light and dark mode
-  
-    Loopstudios
-    A VR experience app made for Loopstudios
+    
+      <div className='appDesignCardsDiv'>
+    
+      {appDesignCards.map((card) => {
+        return <Card props={card.title} img={card.img} title={card.title} text1={card.text1} text2={card.text2} />
+      })}
+
+      </div>
   
       <div className='graphicDesignAndWebDesign'>
         <WebDesignCard />
