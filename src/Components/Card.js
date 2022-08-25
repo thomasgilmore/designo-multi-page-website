@@ -5,7 +5,7 @@ export default function Card({ img, title, text1, text2 }) {
   return (
     <React.Fragment>
       <div className='cardDiv'>
-        <img src={img} className="cardImg" alt="card image" />
+        <img src={img} className="cardImg" alt="Card" />
         <div className='cardTextDiv'>
           <h3 className='cardTitle'>{title}</h3>
           <p>{text1}</p>
