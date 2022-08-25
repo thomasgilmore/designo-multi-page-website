@@ -14,6 +14,7 @@
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  text-decoration: none;
 }
 
 .webDesignCard:hover {
@@ -39,6 +40,7 @@
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  text-decoration: none;
 }
 
 .appDesignCard:hover {
@@ -64,6 +66,7 @@
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  text-decoration: none;
 }
 
 .graphicDesignCard:hover {
