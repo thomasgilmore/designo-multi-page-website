@@ -1,5 +1,6 @@
 import './home.css';
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import bgPatternHeroHome from '../assets/home/desktop/bg-pattern-hero-home.svg';
 import imageHeroPhone from '../assets/home/desktop/image-hero-phone.png';
 import illustrationFriendly from '../assets/home/desktop/illustration-friendly.svg';
@@ -7,9 +8,6 @@ import illustrationPassionate from '../assets/home/desktop/illustration-passiona
 import illustrationResourceful from '../assets/home/desktop/illustration-resourceful.svg';
 import Container from 'react-bootstrap/Container';
 import GetInTouch from './GetInTouch';
-import GraphicDesignCard from './GraphicDesignCard';
-import AppDesignCard from './AppDesignCard';
-import WebDesignCard from './WebDesignCard';
 
 export default function Home() {
   return (
@@ -34,19 +32,25 @@ export default function Home() {
     </div>
 
     <div className='threeImagesStack'>
-      <div className='webDesign'>
-        <h1>Web Design</h1>
-        <p>View Projects</p>
-      </div>
+      <Link to="/web-design" className='webDesign'>
+        <div className='webDesign'>
+          <h1>Web Design</h1>
+          <p>View Projects</p>
+        </div>
+      </Link>
       <div className='appDesignAndGraphicDesign'>
-        <div className='appDesign'>
-          <h1>App Design</h1>
-          <p>View Projects</p>
-        </div>
-        <div className='graphicDesign'>
-          <h1>Graphic Design</h1>
-          <p>View Projects</p>
-        </div>
+        <Link to="/app-design" className='appDesign'>
+          <div className='appDesign'>
+            <h1>App Design</h1>
+            <p>View Projects</p>
+          </div>
+        </Link>
+        <Link to="graphic-design" className='graphicDesign'>
+          <div className='graphicDesign'>
+            <h1>Graphic Design</h1>
+            <p>View Projects</p>
+          </div>
+        </Link>
       </div>
     </div>
     
