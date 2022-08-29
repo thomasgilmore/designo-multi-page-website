@@ -1,0 +1,48 @@
+.aboutUsDivContainer {
+  display: flex;
+}
+
+.aboutUsDiv {
+  background-color: #E7816B;
+  color: #fff;
+  height: 400px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
+}
+
+.bgPatternHeroAboutDesktop {
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  max-height: 800px;
+}
+
+.imageAboutHero {
+  height: 400px;
+  border-radius: 0 20px 20px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .aboutUsDivContainer {
+    flex-direction: column-reverse;
+  }
+
+  .aboutUsDiv {
+    height: 300px; 
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .imageAboutHero {
+    max-height: 400px;
+    border-radius: 20px 20px 0 0;
+  }
+}

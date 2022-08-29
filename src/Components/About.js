@@ -1,13 +1,30 @@
-import React from 'react'
+import './about.css';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import GetInTouch from './GetInTouch';
+import bgPatternHeroAboutDesktop from '../assets/about/desktop/bg-pattern-hero-about-desktop.svg';
+import bgPatternHeroAboutMobile from '../assets/about/mobile/bg-pattern-hero-about-mobile.svg';
+import imageAboutHeroDesktop from '../assets/about/desktop/image-about-hero.jpg';
+import imageAboutHeroMobile from '../assets/about/mobile/image-about-hero.jpg';
+import imageAboutHeroTablet from '../assets/about/tablet/image-about-hero.jpg';
 
 export default function About() {
   return (
     <div>
-    About us
-    Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-    We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-    that make real impact. We’re always looking forward to creating brands, products, and 
-    digital experiences that connect with our clients' audiences.
+      <Container>
+      <div className='aboutUsDivContainer'>
+      <div className='aboutUsDiv'>
+      <h1>About Us</h1>
+      <p>
+        Founded in 2010, we are a creative agency that produces lasting results for our clients. 
+        We've partnered with many startups, corporations, and nonprofits alike to craft designs 
+        that make real impact. We're always looking forward to creating brands, products, and 
+        digital experiences that connect with our clients' audiences.
+      </p>
+      <img src={bgPatternHeroAboutMobile} srcSet={`${bgPatternHeroAboutMobile} 300w, ${bgPatternHeroAboutDesktop} 768w`} alt="bgPatternHeroAboutDesktop" className='bgPatternHeroAboutDesktop' />
+      </div>
+      <img src={imageAboutHeroMobile} srcSet={`${imageAboutHeroMobile} 300w, ${imageAboutHeroTablet} 768w, ${imageAboutHeroDesktop} 1280w`} alt="About Hero" className='imageAboutHero' /> 
+    </div>
   
     World-class talent
     We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
@@ -35,11 +52,8 @@ export default function About() {
   
     United Kingdom
     See location
-  
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can 
-    help your business grow.
-    Get in touch
+    </Container>
+    <GetInTouch />
   </div>
   )
 }
