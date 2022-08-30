@@ -1,0 +1,77 @@
+.canadaContainer,
+.australiaContainer, 
+.unitedKingdomContainer {
+  display: flex;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.canadaDiv {
+  background-color: #FDF3F0;
+  color: #000;
+  height: 400px;
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
+}
+
+.imageMapCanada {
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.australiaDiv {
+  background-color: #FDF3F0;
+  color: #000;
+  height: 400px; 
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
+}
+
+.imageMapAustralia {
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.unitedKindfomDiv {
+  background-color: #FDF3F0;
+  color: #000;
+  height: 400px; 
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
+}
+
+.imageMapUnitedKingdom {
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.canadaTextContainer,
+.australiaTextContainer,
+.unitedKingdomTextContainer {
+  display: flex;
+  justify-content: space-bewteen;
+}
