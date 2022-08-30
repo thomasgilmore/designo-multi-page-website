@@ -11,6 +11,10 @@ import imageWorldClassTalentDesktop from '../assets/about/desktop/image-world-cl
 import imageWorldClassTalentMobile from '../assets/about/mobile/image-world-class-talent.jpg';
 import imageWorldClassTalentTablet from '../assets/about/tablet/image-world-class-talent.jpg';
 import bgPatternThreeCircles from '../assets/shared/desktop/bg-pattern-three-circles.svg';
+import imageRealDealDesktop from '../assets/about/desktop/image-real-deal.jpg';
+import imageRealDealMobile from '../assets/about/mobile/image-real-deal.jpg';
+import imageRealDealTablet from '../assets/about/tablet/image-real-deal.jpg';
+import bgPatternTwoCircles from '../assets/shared/desktop/bg-pattern-two-circles.svg';
 
 
 
@@ -51,15 +55,6 @@ export default function About() {
       </div>
     </div>
   
-  
-    The real deal
-    As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-    Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-    opportunity. We make design and technology more accessible and give you tools to measure success.
-  
-    We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-    we inspire audiences to take action and drive real results.
-  
     Canada
     See location
   
@@ -68,6 +63,25 @@ export default function About() {
   
     United Kingdom
     See location
+  
+    <div className='theRealDealContainer'>
+      <div className='theRealDealDiv'>
+      <h1 className='theRealDealTitle'>The real deal</h1>
+      <p>
+        As strategic partners in our clients' businesses, we are ready to take on any challenge as our own.
+        Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
+        opportunity. We make design and technology more accessible and give you tools to measure success.
+      </p>
+    
+      <p>
+        We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
+        we inspire audiences to take action and drive real results.
+      </p>
+      <img src={bgPatternTwoCircles} alt="bgPatternTwoCircles" className='bgPatternTwoCircles' />
+      </div>
+      <img src={imageRealDealMobile} srcSet={`${imageRealDealMobile} 300w, ${imageRealDealTablet} 768w, ${imageRealDealDesktop} 1280w`} alt="Real Deal" className='imageRealDeal'/>
+    </div>
+  
     </Container>
     <GetInTouch />
   </div>
