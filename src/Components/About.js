@@ -7,6 +7,10 @@ import bgPatternHeroAboutMobile from '../assets/about/mobile/bg-pattern-hero-abo
 import imageAboutHeroDesktop from '../assets/about/desktop/image-about-hero.jpg';
 import imageAboutHeroMobile from '../assets/about/mobile/image-about-hero.jpg';
 import imageAboutHeroTablet from '../assets/about/tablet/image-about-hero.jpg';
+import imageWorldClassTalentDesktop from '../assets/about/desktop/image-world-class-talent.jpg';
+import imageWorldClassTalentMobile from '../assets/about/mobile/image-world-class-talent.jpg';
+import imageWorldClassTalentTablet from '../assets/about/tablet/image-world-class-talent.jpg';
+
 
 export default function About() {
   return (
@@ -25,16 +29,25 @@ export default function About() {
       </div>
       <img src={imageAboutHeroMobile} srcSet={`${imageAboutHeroMobile} 300w, ${imageAboutHeroTablet} 768w, ${imageAboutHeroDesktop} 1280w`} alt="About Hero" className='imageAboutHero' /> 
     </div>
+
+    <div className='worldClassTalentContainer'>
+      <img src={imageWorldClassTalentMobile} srcSet={`${imageWorldClassTalentMobile} 300w, ${imageWorldClassTalentTablet} 768w, ${imageWorldClassTalentDesktop} 1280w`} alt="World Class Talent" className='imageWorldClassTalent'/>
+      <div className='worldClassTalentDiv'>
+        <h1 className='worldClassTalentTitle'>World-class talent</h1>
+        <p>
+          We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
+          crafted from concept to launch, ensuring success in its given market. We are constantly updating 
+          our skills in a myriad of platforms.
+        </p>
+        <p>
+          Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
+          are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
+          Clients have always been impressed with our high-quality outcomes that encapsulates their 
+          brand's story and mission.
+        </p>
+      </div>
+    </div>
   
-    World-class talent
-    We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-    crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-    our skills in a myriad of platforms.
-  
-    Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-    are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-    Clients have always been impressed with our high-quality outcomes that encapsulates their 
-    brand’s story and mission.
   
     The real deal
     As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
