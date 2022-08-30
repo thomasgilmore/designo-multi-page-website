@@ -52,6 +52,14 @@
   color: #E7816B;
 }
 
+.bgPatternThreeCircles {
+  position: absolute; 
+  bottom: 0;
+  left: -100px;
+  z-index: 5;
+  max-height: 800px;
+}
+
 .imageWorldClassTalent {
   height: 600px;
   border-radius: 20px 0 0 20px;

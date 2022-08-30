@@ -10,6 +10,8 @@ import imageAboutHeroTablet from '../assets/about/tablet/image-about-hero.jpg';
 import imageWorldClassTalentDesktop from '../assets/about/desktop/image-world-class-talent.jpg';
 import imageWorldClassTalentMobile from '../assets/about/mobile/image-world-class-talent.jpg';
 import imageWorldClassTalentTablet from '../assets/about/tablet/image-world-class-talent.jpg';
+import bgPatternThreeCircles from '../assets/shared/desktop/bg-pattern-three-circles.svg';
+
 
 
 export default function About() {
@@ -45,6 +47,7 @@ export default function About() {
           Clients have always been impressed with our high-quality outcomes that encapsulates their 
           brand's story and mission.
         </p>
+        <img src={bgPatternThreeCircles} alt="bgPatternThreeCircles" className='bgPatternThreeCircles' />
       </div>
     </div>
   
