@@ -1,0 +1,79 @@
+.contactUsContainer {
+  display: flex;
+  align-items: center;
+  background-color: #E7816B;
+  color: #fff;
+  height: 640px; 
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.contactUsDiv {
+  margin: 0 75px 0 100px;
+  font-size: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 0 50px;
+  gap: 20px;
+}
+
+.contactFormYourMessageText {
+  height: 200px;
+}
+
+.contactFormNameInput,
+.contactFormEmailInput,
+.contactFormPhoneInput,
+.contactFormYourMessageText {
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-size: 20px;
+  width: 400px;
+}
+
+.contactFormNameInput::placeholder,
+.contactFormEmailInput::placeholder,
+.contactFormPhoneInput::placeholder,
+.contactFormYourMessageText::placeholder {
+  color: #fff;
+}
+
+.contactFormNameInput:-ms-input-placeholder ,
+.contactFormEmailInput:-ms-input-placeholder ,
+.contactFormPhoneInput:-ms-input-placeholder ,
+.contactFormYourMessageText:-ms-input-placeholder {
+  color: #fff;
+}
+
+.contactFormNameInput::-ms-input-placeholder,
+.contactFormEmailInput::-ms-input-placeholder,
+.contactFormPhoneInput::-ms-input-placeholder,
+.contactFormYourMessageText::-ms-input-placeholder {
+  color: #fff;
+}
+
+.contactFormNameInput:focus,
+.contactFormEmailInput:focus,
+.contactFormPhoneInput:focus,
+.contactFormYourMessageText:focus {
+  border-bottom: 5px solid #fff;
+}
+
+.contactSubmitButton {
+  background-color: #fff; 
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  margin: 15px 0 0 0;
+  padding: 10px 20px;
+}
+
+.contactSubmitButton:hover {
+  background-color: #FFAD9B;
+}
