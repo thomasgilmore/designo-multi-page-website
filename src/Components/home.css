@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  font-size: 20px;
 }
 
 .awardWinningTitle,
@@ -160,6 +161,7 @@
   text-align: center;
   gap: 40px;
   margin: 10px 0 30px 0;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 992px) {
