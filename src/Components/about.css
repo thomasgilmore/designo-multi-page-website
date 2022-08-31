@@ -1,5 +1,6 @@
 .aboutUsDivContainer {
   display: flex;
+  margin-top: 30px;
 }
 
 .aboutUsDiv {

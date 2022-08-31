@@ -1,4 +1,9 @@
-.canadaContainer,
+.canadaContainer {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+
 .australiaContainer, 
 .unitedKingdomContainer {
   display: flex;
