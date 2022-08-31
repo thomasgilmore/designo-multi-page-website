@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function Title() {
   return (
-    <Navbar expand="lg">
+    <Navbar className='navigationBar' expand="lg">
       <Container>
         <Navbar.Brand href="#home">
           <Link to="/"><img src={logoDark} style={{ width: 250 }} alt="Designo Logo" /></Link>
