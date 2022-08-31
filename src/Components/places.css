@@ -1,0 +1,40 @@
+.placesDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.placeCanda,
+.placeAustralia,
+.placeUnitedKingdom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bgPatternSmallCirlce {
+  position: absolute;
+  z-index: 5;
+}
+
+.seeLocationButton {
+  background-color: #E7816B; 
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin: 15px 0 0 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.seeLocationButton:hover {
+  background-color: #FFAD9B;
+}
+
+@media only screen and (max-width: 992px) {
+  .placesDiv {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
