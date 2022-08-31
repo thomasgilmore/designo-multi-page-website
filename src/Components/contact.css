@@ -77,3 +77,12 @@
 .contactSubmitButton:hover {
   background-color: #FFAD9B;
 }
+
+@media only screen and (max-width: 992px) {
+  .contactUsContainer {
+    flex-direction: column;
+    height: 760px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
