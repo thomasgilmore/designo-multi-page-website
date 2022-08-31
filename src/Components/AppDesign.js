@@ -23,7 +23,7 @@ export default function AppDesign() {
       <div className='appDesignCardsDiv'>
     
       {appDesignCards.map((card) => {
-        return <Card props={card.title} img={card.img} title={card.title} text1={card.text1} text2={card.text2} />
+        return <Card key={card.title} props={card.title} img={card.img} title={card.title} text1={card.text1} text2={card.text2} />
       })}
 
       </div>
