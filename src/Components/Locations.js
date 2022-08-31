@@ -30,6 +30,7 @@ export default function Locations() {
               <p>M : contact@designo.co</p>
             </div>
           </div>
+          <img src={bgPatternTwoCircles} alt="bgPatternTwoCircles" className='bgPatternTwoCircles' />
         </div>
         <img src={imageMapCanadaTablet} srcSet={`${imageMapCanadaTablet} 768w, ${imageMapCanadaDesktop} 1280w`} alt="Map of Canada" className='imageMapCanada' /> 
       </div>
@@ -50,6 +51,7 @@ export default function Locations() {
               <p>M : contact@designo.au</p>
             </div>
           </div>
+          <img src={bgPatternTwoCircles} alt="bgPatternTwoCircles" className='bgPatternTwoCircles' />
         </div>
       </div>
 
@@ -68,6 +70,7 @@ export default function Locations() {
               <p>M : contact@designo.uk</p>
             </div>
           </div>
+          <img src={bgPatternTwoCircles} alt="bgPatternTwoCircles" className='bgPatternTwoCircles' />
         </div>
         <img src={imageMapUnitedKingdomTabelt} srcSet={`${imageMapUnitedKingdomTabelt} 768w, ${imageMapUnitedKingdomDesktop} 1280w`} alt="Map of United Kingdom" className='imageMapUnitedKingdom' /> 
       </div>
