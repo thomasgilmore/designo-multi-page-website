@@ -2,6 +2,7 @@
   display: flex;
   gap: 10px;
   margin: 30px 0;
+  font-size: 20px;
 }
 
 .australiaContainer, 
@@ -9,12 +10,13 @@
   display: flex;
   gap: 10px;
   margin: 50px 0;
+  font-size: 20px;
 }
 
 .canadaDiv {
   background-color: #FDF3F0;
   color: #000;
-  height: 400px;
+  height: 500px;
   width: 100%; 
   overflow: hidden;
   position: relative;
@@ -26,16 +28,21 @@
   padding: 0 100px;
 }
 
+.canadaDiv p,
+.australiaDiv p,
+.unitedKindfomDiv p {
+  margin: 0;
+}
+
 .imageMapCanada {
-  height: 400px;
-  width: 500px;
+  max-height: 500px;
   border-radius: 20px;
 }
 
 .australiaDiv {
   background-color: #FDF3F0;
   color: #000;
-  height: 400px; 
+  height: 500px; 
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -48,15 +55,14 @@
 }
 
 .imageMapAustralia {
-  height: 400px;
-  width: 500px;
+  max-height: 500px;
   border-radius: 20px;
 }
 
 .unitedKindfomDiv {
   background-color: #FDF3F0;
   color: #000;
-  height: 400px; 
+  height: 500px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -69,14 +75,57 @@
 }
 
 .imageMapUnitedKingdom {
-  height: 400px;
-  width: 500px;
   border-radius: 20px;
+  max-height: 500px;
 }
 
 .canadaTextContainer,
 .australiaTextContainer,
 .unitedKingdomTextContainer {
   display: flex;
-  justify-content: space-bewteen;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) {
+  .imageMapCanada {
+    min-width: 450px;
+  }
+  
+  .imageMapAustralia {
+    min-width: 450px;
+  }
+  
+  .imageMapUnitedKingdom {
+    min-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .canadaContainer, 
+  .unitedKingdomContainer {
+    flex-direction: column-reverse;
+  }
+  
+  .australiaContainer {
+    flex-direction: column;
+  }
+
+  .imageMapCanada,
+  .imageMapAustralia,
+  .imageMapUnitedKingdom, {
+    max-width: 100%;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .canadaDiv,
+  .australiaDiv,
+  .unitedKindfomDiv {
+    padding: 0 30px;
+    height: 300px;
+  }
 }
